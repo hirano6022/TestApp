@@ -34,7 +34,7 @@ namespace TestApp.Controllers
 
         public ActionResult About()
         {
-            try
+            /*try
             {
                 throw new NotImplementedException("Exception の実験");
                 ViewBag.Message = "Your application description page.";
@@ -44,8 +44,12 @@ namespace TestApp.Controllers
             {
                 telemetry.TrackException(ex);
                 throw;
-            }
-            
+            }*/
+
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+
         }
 
         public ActionResult Contact()
